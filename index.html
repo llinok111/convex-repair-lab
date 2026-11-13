@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>convex-repair-lab — supporting-plane convexity repair</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; font: 13px/1.45 ui-monospace, Menlo, Consolas, monospace; background: #0e1116; color: #d7dde5; }
+  #app { display: flex; height: 100vh; }
+  #view { flex: 1 1 auto; min-width: 0; }
+  #panel { width: 330px; padding: 12px 14px; overflow-y: auto; background: #151a21; border-left: 1px solid #232b36; }
+  h1 { font-size: 14px; margin: 0 0 8px; }
+  h2 { font-size: 12px; margin: 14px 0 6px; color: #8fb7ff; text-transform: uppercase; letter-spacing: .06em; }
+  button { background: #1d2635; color: #d7dde5; border: 1px solid #33415a; border-radius: 4px; padding: 5px 8px; margin: 0 4px 4px 0; cursor: pointer; font: inherit; }
+  button.on { background: #2b4a86; border-color: #5b86d6; }
+  #hud div { display: flex; justify-content: space-between; gap: 8px; }
+  .ok { color: #6ee7a8; } .bad { color: #ff8f8f; }
+  table { width: 100%; border-collapse: collapse; }
+  td { padding: 1px 0; }
+  .lbl { color: #94a3b8; } .num { text-align: right; }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="view"></div>
+  <div id="panel">
+    <h1>convex-repair-lab</h1>
+    <div class="lbl">supporting-plane convexity repair, exact per-vertex L&infin; shift</div>
+    <h2>mesh</h2>
+    <div id="meshes"></div>
+    <h2>show</h2>
+    <div>
+      <button id="bBase">convex base</button>
+      <button id="bPunct" class="on">punctured</button>
+      <button id="bRepaired" class="on">repaired</button>
+    </div>
+    <h2>live recomputation (same core as node)</h2>
+    <div id="hud"></div>
+    <h2>node-baked reference</h2>
+    <div id="ref"></div>
+    <div id="verdict"></div>
+  </div>
+</div>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.169.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.169.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="./main.js"></script>
+</body>
+</html>

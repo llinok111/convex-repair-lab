@@ -1,0 +1,161 @@
+{
+  "generatedBy": "bench/bench.mjs",
+  "reps": 7,
+  "coldStartMs": 1625.167062,
+  "totalMs": {
+    "min": 1505.650496,
+    "median": 1516.9200089999997,
+    "p95": 1549.072734,
+    "max": 1549.072734,
+    "mean": 1517.9529087142855,
+    "stddev": 14.102864145055293,
+    "rsd": 0.009290712553790945,
+    "n": 7
+  },
+  "naiveBaselineMs": {
+    "min": 0.10759500000000001,
+    "median": 0.13453299999999999,
+    "p95": 1.497905,
+    "max": 1.497905,
+    "mean": 0.4997567142857143,
+    "stddev": 0.5862549029508567,
+    "rsd": 1.1730805934018744,
+    "n": 7
+  },
+  "linfShiftTotalExact": 17.581362654110958,
+  "linfShiftTotalNaive": 4.0229307595828105,
+  "residualViolationsExact": 70,
+  "residualViolationsNaive": 1308,
+  "perMesh": {
+    "cube-bump": {
+      "min": 0.256383,
+      "median": 0.263055,
+      "p95": 0.270369,
+      "max": 0.270369,
+      "mean": 0.2633754285714286,
+      "stddev": 0.004682302573281134,
+      "rsd": 0.017778053931144424,
+      "n": 7
+    },
+    "icosahedron-dent": {
+      "min": 0.137238,
+      "median": 0.147758,
+      "p95": 0.281849,
+      "max": 0.281849,
+      "mean": 0.16501142857142856,
+      "stddev": 0.04833093873599023,
+      "rsd": 0.2928944931536618,
+      "n": 7
+    },
+    "prism8-bump": {
+      "min": 1.987976,
+      "median": 2.025527,
+      "p95": 2.251072,
+      "max": 2.251072,
+      "mean": 2.0783365714285718,
+      "stddev": 0.11078221841956049,
+      "rsd": 0.05330330993666386,
+      "n": 7
+    },
+    "cone24-dent": {
+      "min": 398.223576,
+      "median": 399.873712,
+      "p95": 408.170912,
+      "max": 408.170912,
+      "mean": 402.2703217142857,
+      "stddev": 4.284608396185008,
+      "rsd": 0.010651067615244482,
+      "n": 7
+    },
+    "cone16-dent": {
+      "min": 18.055151,
+      "median": 18.247277,
+      "p95": 18.710924,
+      "max": 18.710924,
+      "mean": 18.27266371428571,
+      "stddev": 0.2113912761679589,
+      "rsd": 0.011568717044942473,
+      "n": 7
+    },
+    "prism16-dent": {
+      "min": 1071.107561,
+      "median": 1073.372643,
+      "p95": 1107.589924,
+      "max": 1107.589924,
+      "mean": 1079.8780894285715,
+      "stddev": 12.045066441687712,
+      "rsd": 0.011154098374253971,
+      "n": 7
+    },
+    "bipyramid12-dent": {
+      "min": 14.037474,
+      "median": 14.102806,
+      "p95": 14.764435,
+      "max": 14.764435,
+      "mean": 14.212668714285714,
+      "stddev": 0.2382440038548203,
+      "rsd": 0.016762791608260864,
+      "n": 7
+    },
+    "cone8-dent": {
+      "min": 0.767413,
+      "median": 0.78213,
+      "p95": 0.924829,
+      "max": 0.924829,
+      "mean": 0.8124417142857142,
+      "stddev": 0.05693257068225354,
+      "rsd": 0.0700758832063513,
+      "n": 7
+    }
+  },
+  "verdicts": {
+    "cube-bump": {
+      "status": "converged",
+      "iterations": 1,
+      "postViolations": 0,
+      "maxShift": 0.30000000000000016
+    },
+    "icosahedron-dent": {
+      "status": "converged",
+      "iterations": 1,
+      "postViolations": 0,
+      "maxShift": 0.07344372713168193
+    },
+    "prism8-bump": {
+      "status": "converged",
+      "iterations": 3,
+      "postViolations": 0,
+      "maxShift": 0.32385321532191114
+    },
+    "cone24-dent": {
+      "status": "converged",
+      "iterations": 2,
+      "postViolations": 0,
+      "maxShift": 1.6371052710770866
+    },
+    "cone16-dent": {
+      "status": "converged",
+      "iterations": 2,
+      "postViolations": 0,
+      "maxShift": 0.2716029770116738
+    },
+    "prism16-dent": {
+      "status": "converged",
+      "iterations": 3,
+      "postViolations": 0,
+      "maxShift": 1.0774128470616
+    },
+    "bipyramid12-dent": {
+      "status": "refused",
+      "iterations": 2,
+      "postViolations": 60,
+      "maxShift": 12.135344014288396
+    },
+    "cone8-dent": {
+      "status": "refused",
+      "iterations": 2,
+      "postViolations": 10,
+      "maxShift": 1.7626006022186083
+    }
+  }
+}
